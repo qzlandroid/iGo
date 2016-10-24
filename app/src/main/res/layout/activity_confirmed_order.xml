@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/titlebar_confirm"
+        layout="@layout/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+
+    <RelativeLayout
+        android:id="@+id/confirm_addr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imageView"
+            android:text="收货人：" />
+
+        <TextView
+            android:id="@+id/confirm_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:text="兰轩轩" />
+
+        <TextView
+            android:id="@+id/confirm_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/confirm_name"
+            android:layout_marginEnd="23dp"
+            android:text="12345678910" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="35dp"
+            android:text="收货地址: " />
+
+        <TextView
+            android:id="@+id/confirm_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"
+            android:text="江苏省南京市江宁区淳化街道弘景..." />
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignEnd="@+id/confirm_phone"
+            android:layout_marginTop="38dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/setting_info_arrow" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listView_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlebar"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="4dp"
+            android:divider="#00000000"
+            android:dividerHeight="4dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/confirm_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/confirm_count_1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="150dp"
+            android:text="1"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="件" />
+
+        <TextView
+            android:id="@+id/confirm_money"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="¥150"
+            android:textColor="@color/colorPrimary" />
+        <!--<RadioButton-->
+        <!--android:id="@+id/radioButton"-->
+        <!--android:layout_width="288dp"-->
+        <!--android:layout_height="wrap_content"></RadioButton>-->
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:enabled="true"
+            android:focusable="true"
+            android:text="提交订单"
+            android:textColor="@color/white">
+
+        </Button>
+
+
+    </LinearLayout>
+</LinearLayout>

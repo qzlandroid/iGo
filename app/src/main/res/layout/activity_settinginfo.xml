@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:id="@+id/activity_settinginfo"
+    android:orientation="vertical">
+
+    <!--标题栏-->
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/titlebar"
+        />
+
+    <com.example.max.iGo.UserDefined.RoundImageView
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:id="@+id/roundImageView"
+        android:onClick="ClickToModifyPortrait"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        />
+
+    <RelativeLayout
+    android:id="@+id/setting_sex_layout"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="50dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:id="@+id/img1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/setting_info_sex"/>
+    <TextView
+        android:id="@+id/tv_sex1"
+        android:layout_marginLeft="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="性别"/>
+    <!--android:textSize="17sp"-->
+    <TextView
+        android:id="@+id/tv_sex2"
+        android:layout_marginRight="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text=""/>
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/account_list_arrow"
+        />
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_nickname_info"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_info_name"/>
+        <TextView
+
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="我的昵称"/>
+        <!--android:textSize="17sp"-->
+        <TextView
+            android:onClick="click_for_nickname"
+            android:id="@+id/tv_nickname_info"
+            android:layout_marginRight="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:layout_alignParentRight="true"
+            android:text=""/>
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/account_list_arrow"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_addr_layout"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/img_addr"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/setting_info_adress"/>
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="收货地址"/>
+        <!--android:textSize="17sp"-->
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/account_list_arrow"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

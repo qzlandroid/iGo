@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:stretchColumns="0,1,2,3,4">
+
+        <TableRow>
+
+            <!--00-->
+            <ImageView
+                android:id="@+id/category_clothImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_cloth" />
+
+            <!--01-->
+            <ImageView
+                android:id="@+id/category_foodImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_food" />
+
+            <!--02-->
+            <ImageView
+                android:id="@+id/category_livingImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_living" />
+
+            <!--03-->
+            <ImageView
+                android:id="@+id/category_digitImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_digit" />
+
+            <!--04-->
+            <ImageView
+                android:id="@+id/category_householsImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_household" />
+
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="服装" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="美食" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="居家" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="数码" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="家电" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="24dip">
+            <!--10-->
+            <ImageView
+                android:id="@+id/category_babyImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_baby" />
+
+            <!--11-->
+            <ImageView
+                android:id="@+id/category_booksImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_books" />
+
+            <!--12-->
+            <ImageView
+                android:id="@+id/category_decorationImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_decoration" />
+
+            <!--13-->
+            <ImageView
+                android:id="@+id/category_makeupImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_makeup" />
+            <!--14-->
+            <ImageView
+                android:id="@+id/category_packetImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_packet" />
+
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="母婴" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="图书" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="家装" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="美妆" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="箱包" />
+        </TableRow>
+
+    </TableLayout>
+
+    <LinearLayout android:id="@+id/category_indicator_LinearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dip"
+        android:layout_marginBottom="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/category_indicator_front"
+            android:layout_width="6dip"
+            android:layout_height="6dip"
+            android:src="@drawable/index_category_indicator_selected" />
+
+        <Space
+            android:layout_width="8dip"
+            android:layout_height="3dip" />
+
+        <ImageView
+            android:id="@+id/category_indicator_behind"
+            android:layout_width="6dip"
+            android:layout_height="6dip"
+            android:src="@drawable/index_category_indicator" />
+    </LinearLayout>
+</LinearLayout>

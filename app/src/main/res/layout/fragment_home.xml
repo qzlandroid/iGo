@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        layout="@layout/fragment_home_title"/>
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eeeeee"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/scroll_Layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/category_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                >
+                <ViewFlipper
+                    android:id="@+id/viewFlipper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <include
+                        android:id="@+id/layout01"
+                        layout="@layout/fragment_home_viewflipper_front" />
+                    <include
+                        android:id="@+id/layout02"
+                        layout="@layout/fragment_home_viewflipper_behind" />
+
+                </ViewFlipper>
+
+            </LinearLayout>
+
+            <include
+                android:id="@+id/discount_fg1"
+                layout="@layout/fragment_home_discount" />
+            <include
+                android:id="@+id/hot_fg1"
+                layout="@layout/fragment_home_hot" />
+            <include
+                android:id="@+id/guessYou_fg1"
+                layout="@layout/fragment_home_guesslike" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

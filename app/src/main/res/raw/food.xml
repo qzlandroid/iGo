@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<goods>
+	<item>
+		<text>茶叶</text>
+		<picname>category_second_food_tea</picname>
+		<path>http://153.3.192.134/category_second_food_tea.png</path>
+	</item>
+	<item>
+		<text>酒水</text>
+		<picname>category_second_food_spirits</picname>
+		<path>http://153.3.192.134/category_second_food_spirits.png</path>
+	</item>
+	<item>
+		<text>零食</text>
+		<picname>category_second_food_snacks</picname>
+		<path>http://153.3.192.134/category_second_food_snacks.png</path>
+	</item>
+	<item>
+		<text>粮油</text>
+		<picname>category_second_food_oil</picname>
+		<path>http://153.3.192.134/category_second_food_oil.png</path>
+	</item>
+	<item>
+		<text>冲饮</text>
+		<picname>category_second_food_electuary</picname>
+		<path>http://153.3.192.134/category_second_food_electuary.png</path>
+	</item>
+	<item>
+		<text>饮料</text>
+		<picname>category_second_food_drink</picname>
+		<path>http://153.3.192.134/category_second_food_drink.png</path>
+	</item>
+</goods>

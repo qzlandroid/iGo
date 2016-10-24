@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dip"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/index_hot_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:textColor="#66cc33"
+            android:text=" 热门宝贝"/>
+    </LinearLayout>
+    <TableLayout
+        android:id="@+id/hot_TableLay"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2,3,4">
+
+        <TableRow
+            android:id="@+id/hot_TableRow0"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/index_hot_pic1"
+                android:layout_width="144dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:background="#ffffff"/>
+
+
+            <ImageView
+                android:id="@+id/index_hot_pic2"
+                style="@style/guessU_small_Style"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"/>
+
+            <ImageView
+                android:id="@+id/index_hot_pic3"
+                style="@style/guessU_small_Style"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/index_hot_pic4"
+                style="@style/guessU_small_Style"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff"/>
+        </TableRow>
+
+        <TableRow android:layout_marginTop="1dp">
+            <ImageView
+                android:id="@+id/index_hot_pic5"
+                android:layout_width="144dp"
+                android:layout_height="120dp"
+                android:scaleType="fitXY"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/index_hot_pic6"
+                style="@style/guessU_small_Style"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/index_hot_pic7"
+                style="@style/guessU_small_Style"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff" />
+
+            <ImageView
+                android:id="@+id/index_hot_pic8"
+                style="@style/guessU_small_Style"
+                android:layout_marginLeft="1dp"
+                android:background="#ffffff" />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

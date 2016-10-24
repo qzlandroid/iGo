@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<goods>
+	<item>
+		<text>西装</text>
+		<picname>category_second_businesssuitb</picname>
+		<path>http://153.3.192.134/category_second_businesssuitb.png</path>
+	</item>
+	<item>
+		<text>休闲裤</text>
+		<picname>category_second_casualg</picname>
+		<path>http://153.3.192.134/category_second_casualg.png</path>
+	</item>
+	<item>
+		<text>牛仔裤</text>
+		<picname>category_second_casualpantsg</picname>
+		<path>http://153.3.192.134/category_second_casualpantsg.png</path>
+	</item>
+	<item>
+		<text>连衣裙</text>
+		<picname>category_second_dressg</picname>
+		<path>http://153.3.192.134/category_second_dressg.png</path>
+	</item>
+	<item>
+		<text>卫衣 男</text>
+		<picname>category_second_fleeceb</picname>
+		<path>http://153.3.192.134/category_second_fleeceb.png</path>
+	</item>
+	<item>
+		<text>卫衣 女</text>
+		<picname>category_second_fleeceg</picname>
+		<path>http://153.3.192.134/category_second_fleeceg.png</path>
+	</item>
+	<item>
+		<text>夹克 男</text>
+		<picname>category_second_jacketb</picname>
+		<path>http://153.3.192.134/category_second_jacketb.png</path>
+	</item>
+	<item>
+		<text>牛仔外套 女</text>
+		<picname>category_second_jeang</picname>
+		<path>http://153.3.192.134/category_second_jeang.png</path>
+	</item>
+	<item>
+		<text>针织衫 女</text>
+		<picname>category_second_knitwearg</picname>
+		<path>http://153.3.192.134/category_second_knitwearg.png</path>
+	</item>
+	<item>
+		<text>衬衫 男</text>
+		<picname>category_second_shirtb</picname>
+		<path>http://153.3.192.134/category_second_shirtb.png</path>
+	</item>
+	<item>
+		<text>毛衣 女</text>
+		<picname>category_second_shirtg</picname>
+		<path>http://153.3.192.134/category_second_shirtg.png</path>
+	</item>
+	<item>
+		<text>鞋子</text>
+		<picname>category_second_shoesg</picname>
+		<path>http://153.3.192.134/category_second_shoesg.png</path>
+	</item>
+	<item>
+		<text>短裙 女</text>
+		<picname>category_second_shortdressg</picname>
+		<path>http://153.3.192.134/category_second_shortdressg.png</path>
+	</item>
+	<item>
+		<text>毛衣 女</text>
+		<picname>category_second_sweaterg</picname>
+		<path>http://153.3.192.134/category_second_sweaterg.png</path>
+	</item>
+	<item>
+		<text>T恤 男</text>
+		<picname>category_second_tshirtb</picname>
+		<path>http://153.3.192.134/category_second_tshirtb.png</path>
+	</item>
+	<item>
+		<text>T恤 女</text>
+		<picname>category_second_tshirtg</picname>
+		<path>http://153.3.192.134/category_second_tshirtg.png</path>
+	</item>
+	
+</goods>

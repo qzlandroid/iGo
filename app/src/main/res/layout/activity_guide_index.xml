@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sdh.sdh.guideindex.GuideIndex">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+    <Button
+        android:onClick="click_start"
+        android:id="@+id/explore_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/guide_button"
+        android:visibility="invisible"
+        android:text="开始体验"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="60dp"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_shape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+        <View
+            android:id="@+id/red_oval"
+            android:layout_width="25px"
+            android:layout_height="25px"
+            android:background="@drawable/guide_shape_red" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:stretchColumns="0,1,2,3,4">
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/category_sportImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_sport" />
+
+            <ImageView
+                android:id="@+id/category_gamesImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_games" />
+
+            <ImageView
+                android:id="@+id/category_brandImageV"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:src="@drawable/index_category_brand" />
+
+            <Space
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_column="3" />
+            <Space
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_column="4" />
+        </TableRow>
+
+        <TableRow >
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="运动" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="游戏" />
+            <TextView
+                style="@style/categoryTextStyle"
+                android:text="品牌" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="24dip">
+            <Space android:layout_height="48dip" /></TableRow>
+
+        <TableRow ><Space android:layout_height="12dip" /></TableRow>
+
+    </TableLayout>
+
+    <LinearLayout android:id="@+id/category_indicator_LinearLay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dip"
+        android:layout_marginBottom="12dp"
+        >
+
+        <ImageView
+            android:id="@+id/category_indicator_front"
+            android:layout_width="6dip"
+            android:layout_height="6dip"
+            android:src="@drawable/index_category_indicator" />
+
+        <Space
+            android:layout_width="8dip"
+            android:layout_height="3dip" />
+
+        <ImageView
+            android:id="@+id/category_indicator_behind"
+            android:layout_width="6dip"
+            android:layout_height="6dip"
+            android:src="@drawable/index_category_indicator_selected" />
+    </LinearLayout>
+</LinearLayout>

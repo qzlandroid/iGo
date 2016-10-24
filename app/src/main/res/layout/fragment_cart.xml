@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/titlebar"
+        />
+
+
+    <ListView
+        android:layout_below="@id/titlebar"
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:id="@+id/listView_cart"
+
+        android:divider="#00000000"
+        android:dividerHeight="8dp"
+        android:layout_marginTop="8dp"/>
+
+
+
+    <LinearLayout android:id="@+id/cart_count_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp">
+
+        <CheckBox
+            android:id="@+id/checkBox__selectAll"
+            android:layout_width="48dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_checkbox_cart"
+            android:button="@null" />
+        <TextView
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="全选"/>
+        <!--<RadioButton-->
+        <!--android:id="@+id/radioButton"-->
+        <!--android:layout_width="288dp"-->
+        <!--android:layout_height="wrap_content"></RadioButton>-->
+
+
+        <Button
+            android:id="@+id/pay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_button_flat"
+            android:focusable="true"
+            android:text="结算"
+            android:clickable="true"
+            android:enabled="true">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

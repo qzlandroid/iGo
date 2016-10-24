@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".SearchResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_top"
+        android:background="#06b5e2"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:id="@+id/search_result_back"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/navigation_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <ImageView
+            android:id="@+id/search_result_sort"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search_result_sortby"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+        <RelativeLayout
+            android:layout_toLeftOf="@id/search_result_sort"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/search_result_back"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:background="#ffffff">
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/search_result_search"
+                android:layout_centerVertical="true"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/index_searchbar_search"/>
+            <EditText
+                android:id="@+id/search_result_search_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/search_result_search"
+                android:layout_marginLeft="15dp"
+
+                android:background="@null"
+                android:hint="请输入商品"
+                android:textSize="14sp"
+                android:cursorVisible="false"
+                android:textCursorDrawable="@null"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@id/relative_top"
+        android:id="@+id/search_result_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_below="@id/search_result_listview"
+        android:layout_width="match_parent"
+        android:background="#efeff4"
+        android:layout_height="2dp"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/search_result_scrolltotop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/search_result_backtop"/>
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:indeterminateDrawable="@drawable/custom_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/fragment_chat_bg">
+
+        <ImageView
+            android:id="@+id/iv_card"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/fragment_chat_card"/>
+        <TextView
+            android:id="@+id/fragment_chat_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="300dp"
+            android:text="新买的眼睛真好看，来张自拍"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@id/iv_card"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/fragment_chat_tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="102"
+            android:textSize="15sp"
+            android:layout_below="@id/iv_card"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+        <ImageView
+            android:id="@+id/fragment_chat_iv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fragment_chat_like"
+            android:layout_below="@id/iv_card"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/fragment_chat_tv_like"
+            android:layout_marginRight="8dp"
+            />
+        <TextView
+            android:id="@+id/fragment_chat_tv_common"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="203"
+            android:textSize="15sp"
+            android:layout_below="@id/iv_card"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/fragment_chat_iv_like"
+            android:layout_marginRight="15dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fragment_chat_common"
+            android:layout_below="@id/iv_card"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@id/fragment_chat_tv_common"
+            android:layout_marginRight="8dp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

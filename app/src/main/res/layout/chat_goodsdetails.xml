@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    tools:context="com.sdh.sdh.myapplication10.MainActivity">
+
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/titlebar"
+        />
+
+
+    <LinearLayout
+
+        android:id="@+id/input_comment_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#06b5e2">
+
+        <ImageView
+            android:layout_weight="1.5"
+            android:id="@+id/iv_lihai"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/chat_more_like_m_on" />
+
+        <EditText
+            android:layout_weight="5.3"
+            android:id="@+id/input_comment"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="#FFFFFF"
+            android:hint="评论"
+            android:inputType="textMultiLine"
+            android:textColor="#AA000000"
+            android:textColorHint="#d2d2d2"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:text="发送" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/comment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input_comment_bottom"
+        android:layout_below="@id/titlebar"></ListView>
+
+
+</RelativeLayout>

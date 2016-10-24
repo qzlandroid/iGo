@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/titlebar"
+        />
+    <ListView
+        android:background="#eee"
+        android:divider="#eee"
+        android:layout_weight="1"
+        android:id="@+id/address_mana_lv"
+        android:dividerHeight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#69c7e7"
+        android:text="添加收货地址"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:onClick="Add_Address"/>
+</LinearLayout>

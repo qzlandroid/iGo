@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:background="#FFFFFF">
+    <ImageView
+        android:id="@+id/home_message_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/notification_music_icon"/>
+    <TextView
+        android:singleLine="true"
+        android:id="@+id/home_message_name"
+        android:layout_toRightOf="@id/home_message_img"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#000"
+        android:maxWidth="250dp"
+        android:ellipsize="end"
+        android:text="周末来爱购，音乐根本停不下来周末来爱购，音乐根本停不下来"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/home_message_date"
+        android:singleLine="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#686868"
+        android:text="2/24"
+        android:textSize="15sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

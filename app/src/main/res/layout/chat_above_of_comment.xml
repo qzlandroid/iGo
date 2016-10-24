@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ebebeb"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/chat_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:layout_centerHorizontal="true"
+                android:text="标题:白色情人节还懂？" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/chat_detail_title"
+                android:text="白色情人节"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/qrj"
+                android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:onClick="goods_detail"
+            android:id="@+id/goods_detail"
+            android:background="#FFFFFF"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chat_more_cart"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点我去宝贝详情"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:textColor="#0000ff"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chat_more_comms"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部评论(2)"
+                android:textSize="15sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:textColor="#000000"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

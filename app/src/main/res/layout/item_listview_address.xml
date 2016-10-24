@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#fcfcfc"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/mag_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小明"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/mag_iphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#fcfcfc"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="45dp">
+        <TextView
+            android:id="@+id/mag_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="江苏省南京市弘景大道99号"
+            android:textColor="#aa000000"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

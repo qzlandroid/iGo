@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:drawable="@drawable/product_point_on"/>
+    <item android:drawable="@drawable/product_point_off"/>
+
+</selector>

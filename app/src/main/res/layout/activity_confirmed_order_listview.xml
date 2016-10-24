@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:id="@+id/confirm_allListitem_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:id="@+id/layout_goodsdescrip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView_confirm_goodsname"
+                    android:layout_width="192dp"
+                    android:layout_height="32dp"
+                    android:text="商品名从数据库读取商品名此为测试名称00：包邮全场"
+                    android:textSize="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:textColor="#EE1111" />
+
+                    <TextView
+                        android:id="@+id/textView_confirm_price"
+                        android:layout_width="46dp"
+                        android:layout_height="wrap_content"
+                        android:text="155"
+                        android:textColor="#EE1111" />
+
+                    <TextView
+                        android:id="@+id/textView_confirm_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="302销量" />
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView_confirm_lv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_row="0"
+            android:src="#ffe1e1"
+            android:text="结算" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="1dp"
+            android:id="@+id/confirm_count_layout"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="20dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="购买数量"
+                android:textColor="#424242" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/confirm_count_up"
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:background="@drawable/up" />
+
+            <TextView
+                android:id="@+id/confirm_count"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#424242" />
+
+            <ImageButton
+                android:id="@+id/confirm_count_down"
+                android:layout_width="12dp"
+                android:layout_height="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/down" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
